@@ -1,8 +1,3 @@
-anagram-rd
-==========
-
-Assessment to fullfil RD's developer position.
-
 # Tool to visualize Anagrams
 
 [![Gem Version](https://badge.fury.io/rb/shopify_theme.svg)](http://badge.fury.io/rb/shopify_theme)
@@ -13,9 +8,8 @@ Assessment to fullfil RD's developer position.
 
 # Requirements
 
-This gem works with OS X or Windows with Ruby 1.9. 
+This gem works with Ubuntu 14.04 with Ruby 1.9.3-p547, using [rbenv](https://github.com/sstephenson/rbenv)
 
-First time installing Ruby on windows? Try [Rubyinstaller](http://http://rubyinstaller.org/). 
 
 # Installation
 
