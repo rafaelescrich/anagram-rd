@@ -30,10 +30,3 @@ gem install anagram-rd
 
 
 ## How do I edit a theme that isn't my shops main theme?
-
-
-
-## Where can I find my Theme Id?
-
-
-![themes/THEME_ID/settings](doc/how_to_find_theme_id.png)
