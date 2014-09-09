@@ -5,6 +5,8 @@
 
 ![](https://dl.dropboxusercontent.com/u/3150365/anagram-rd.png)
 
+[Teste online the App](http://anagram-rd.herokuapp.com/)
+
 # Requirements
 
 First install [rbenv](https://github.com/sstephenson/rbenv)
