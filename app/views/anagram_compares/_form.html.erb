@@ -1,0 +1,25 @@
+<%= form_for(@anagram_compare) do |f| %>
+  <% if @anagram_compare.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@anagram_compare.errors.count, "error") %> prohibited this anagram_compare from being saved:</h2>
+
+      <ul>
+      <% @anagram_compare.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :original %><br>
+    <%= f.text_field :original %>
+  </div>
+  <div class="field">
+    <%= f.label :wannabe %><br>
+    <%= f.text_field :wannabe %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

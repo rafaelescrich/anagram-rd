@@ -1,0 +1,27 @@
+<h1>Listing anagram_compares</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Original</th>
+      <th>Wannabe</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @anagram_compares.each do |anagram_compare| %>
+      <tr>
+        <td><%= anagram_compare.original %></td>
+        <td><%= anagram_compare.wannabe %></td>
+        <td><%= link_to 'Show', anagram_compare %></td>
+        <!-- <td><%= link_to 'Edit', edit_anagram_compare_path(anagram_compare) %></td> -->
+        <td><%= link_to 'Destroy', anagram_compare, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Anagram compare', new_anagram_compare_path %>

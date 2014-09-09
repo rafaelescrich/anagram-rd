@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Original:</strong>
+  <%= @anagram_compare.original %>
+</p>
+
+<p>
+  <strong>Wannabe:</strong>
+  <%= @anagram_compare.wannabe %>
+</p>
+
+<%= link_to 'Edit', edit_anagram_compare_path(@anagram_compare) %> |
+<%= link_to 'Back', anagram_compares_path %>
