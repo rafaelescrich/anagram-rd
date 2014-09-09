@@ -1,10 +1,11 @@
+
 <%= simple_form_for(@anagram_compare) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :original %>
-    <%= f.input :wannabe %>
-    <%= f.input :status %>
+    <%= f.input :original, label: 'Put original string here...' %>
+    <%= f.input :wannabe, label: 'Put the string you wanna compare here...' %>
+    </br>
   </div>
 
   <div class="form-actions">

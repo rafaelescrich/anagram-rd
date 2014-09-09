@@ -24,6 +24,24 @@ class AnagramComparesController < ApplicationController
   # POST /anagram_compares
   # POST /anagram_compares.json
   def create
+
+    puts "----------------------------------------------------------------------------------------------------------"
+
+    @original = anagram_compare_params["original"].mb_chars.downcase.to_s.chars.sort { |a, b| a.casecmp(b) } .join
+    @wannabe = anagram_compare_params["wannabe"].mb_chars.downcase.to_s.chars.sort { |a, b| a.casecmp(b) } .join
+
+    if @original == @wannabe
+      anagram_compare_params[:status] = "true"
+    else
+      anagram_compare_params[:status] = "false"
+    end
+
+    anagram_compare_params.each do |key, value|
+      puts value.gsub(/\s+/, "").mb_chars.downcase.to_s.chars.sort { |a, b| a.casecmp(b) } .join
+    end
+
+    puts "---------------------------------------------------------------------------------------------------------"
+
     @anagram_compare = AnagramCompare.new(anagram_compare_params)
 
     respond_to do |format|

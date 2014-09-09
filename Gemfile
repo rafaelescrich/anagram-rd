@@ -7,6 +7,10 @@ gem 'rails', '4.1.5'
 group :development do
   gem 'sqlite3', '1.3.8'
 end
+# Using to sort string alphabetically
+gem 'sort_alphabetical'
+# Using thin to avoid content-length error
+gem 'thin'
 # Using Postgres in production on Heroku
 group :production do
   gem 'pg', '0.15.1'

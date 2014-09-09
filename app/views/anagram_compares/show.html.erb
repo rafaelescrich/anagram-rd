@@ -1,19 +1,38 @@
-<p id="notice"><%= notice %></p>
+<div class="jumbotron" style="background-image: url(<%= asset_path 'dubrovink.png' %>)">
+  <div class="container">
+    <h1 style="color: white; text-shadow: 3px 3px 3px black;">Detect if is an anagram!!</h1>
+    <p style="color: white; text-shadow: 3px 3px 3px black;">A Eradicating Fast Men!!</p>
+    <p><a href="http://github.com/rafaelescrich/anagram-rd" target="_blank" class="btn btn-primary btn-lg">Github Code</a></p>
+  </div>
+  <div class="clear"></div>
+</div>
 
-<p>
-  <strong>Original:</strong>
-  <%= @anagram_compare.original %>
-</p>
+<div class="container">
+    <div class="col-sm-12">
+          <!--panel-->
+          <div class="panel panel-primary">
+              <!-- Default panel contents -->
+              <div class="panel-heading"><h4><strong>Testing anagram</strong></h4></div>
+              <div class="panel-body">
+					<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Wannabe:</strong>
-  <%= @anagram_compare.wannabe %>
-</p>
+					<p>
+					  <strong>Original:</strong>
+					  <%= @anagram_compare.original %>
+					</p>
 
-<p>
-  <strong>Status:</strong>
-  <%= @anagram_compare.status %>
-</p>
+					<p>
+					  <strong>Wannabe:</strong>
+					  <%= @anagram_compare.wannabe %>
+					</p>
 
-<%= link_to 'Edit', edit_anagram_compare_path(@anagram_compare) %> |
-<%= link_to 'Back', anagram_compares_path %>
+					<p>
+					  <strong>Status:</strong>
+					  <%= @anagram_compare.status %>
+					</p>
+					<%= link_to 'Back', anagram_compares_path, :class => 'btn btn-danger btn-lg btn-block pull-right' %>
+              </div>
+          </div>
+          <!--end of panel-->
+      </div>
+    </div>
