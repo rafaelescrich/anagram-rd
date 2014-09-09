@@ -36,9 +36,7 @@ class AnagramComparesController < ApplicationController
       anagram_compare_params[:status] = "false"
     end
 
-    anagram_compare_params.each do |key, value|
-      puts value.gsub(/\s+/, "").mb_chars.downcase.to_s.chars.sort { |a, b| a.casecmp(b) } .join
-    end
+    puts anagram_compare_params
 
     puts "---------------------------------------------------------------------------------------------------------"
 
