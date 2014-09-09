@@ -6,6 +6,8 @@ gem 'rails', '4.1.5'
 # Using sqlite3 to development
 group :development do
   gem 'sqlite3', '1.3.8'
+  gem 'better_errors', '1.1.0'
+  gem 'binding_of_caller'
 end
 # Using to sort string alphabetically
 gem 'sort_alphabetical'

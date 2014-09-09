@@ -27,20 +27,8 @@ class AnagramComparesController < ApplicationController
 
     puts "----------------------------------------------------------------------------------------------------------"
 
-    @original = anagram_compare_params["original"].mb_chars.downcase.to_s.chars.sort { |a, b| a.casecmp(b) } .join
-    @wannabe = anagram_compare_params["wannabe"].mb_chars.downcase.to_s.chars.sort { |a, b| a.casecmp(b) } .join
-
-    if @original == @wannabe
-      anagram_compare_params[:status] = "true"
-    else
-      anagram_compare_params[:status] = "false"
-    end
-
-    puts anagram_compare_params
-
-    puts "---------------------------------------------------------------------------------------------------------"
-
     @anagram_compare = AnagramCompare.new(anagram_compare_params)
+
 
     respond_to do |format|
       if @anagram_compare.save
