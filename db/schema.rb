@@ -11,11 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140909014620) do
+ActiveRecord::Schema.define(version: 20140909133053) do
 
   create_table "anagram_compares", force: true do |t|
     t.string   "original"
     t.string   "wannabe"
+    t.boolean  "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -18,7 +18,7 @@ class AnagramComparesControllerTest < ActionController::TestCase
 
   test "should create anagram_compare" do
     assert_difference('AnagramCompare.count') do
-      post :create, anagram_compare: { original: @anagram_compare.original, wannabe: @anagram_compare.wannabe }
+      post :create, anagram_compare: { original: @anagram_compare.original, status: @anagram_compare.status, wannabe: @anagram_compare.wannabe }
     end
 
     assert_redirected_to anagram_compare_path(assigns(:anagram_compare))
@@ -35,7 +35,7 @@ class AnagramComparesControllerTest < ActionController::TestCase
   end
 
   test "should update anagram_compare" do
-    patch :update, id: @anagram_compare, anagram_compare: { original: @anagram_compare.original, wannabe: @anagram_compare.wannabe }
+    patch :update, id: @anagram_compare, anagram_compare: { original: @anagram_compare.original, status: @anagram_compare.status, wannabe: @anagram_compare.wannabe }
     assert_redirected_to anagram_compare_path(assigns(:anagram_compare))
   end
 

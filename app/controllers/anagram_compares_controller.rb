@@ -69,6 +69,6 @@ class AnagramComparesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def anagram_compare_params
-      params.require(:anagram_compare).permit(:original, :wannabe)
+      params.require(:anagram_compare).permit(:original, :wannabe, :status)
     end
 end
