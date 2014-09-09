@@ -3,8 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/shopify_theme.svg)](http://badge.fury.io/rb/shopify_theme)
 
 
-![Anagram App](https://dl-web.dropbox.com/get/anagram-rd.png?_subject_uid=3150365&w=AADQp6WhKp3K3dH8d5lmMDkWdRna-iWBLmukTpGaMYLXsg)
-
+![](https://dl.dropboxusercontent.com/u/3150365/anagram-rd.png)
 
 # Requirements
 
