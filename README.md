@@ -48,4 +48,4 @@ To install the anagram-rd gem use 'gem install' (you might have use 'sudo gem in
 ```
 gem install anagram-rd
 ```
-Any doubts or bugs, please report at rafaelescrich at gmail.com
+Any doubts or bugs, please report to rafaelescrich at gmail.com
