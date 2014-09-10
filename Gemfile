@@ -9,8 +9,6 @@ group :development do
   gem 'better_errors', '1.1.0'
   gem 'binding_of_caller'
 end
-# Using to sort string alphabetically
-gem 'sort_alphabetical'
 # Using thin to avoid content-length error
 gem 'thin'
 # Using Postgres in production on Heroku
@@ -18,6 +16,8 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
+# Using rspec to create unit tests
+gem 'rspec'
 # Using Simple_form with bootstrap
 gem 'simple_form'
 # Use SCSS for stylesheets
@@ -31,6 +31,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+# Use execjs to avoid have to relod error
+gem 'execjs'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

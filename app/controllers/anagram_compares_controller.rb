@@ -26,6 +26,10 @@ class AnagramComparesController < ApplicationController
   def create
 
     puts "----------------------------------------------------------------------------------------------------------"
+    puts anagram_compare_params
+    puts anagram_compare_params["original"].mb_chars.downcase.to_s.chars.sort{ |a, b| a.casecmp(b) }.join
+    puts anagram_compare_params["wannabe"].mb_chars.downcase.to_s.chars.sort{ |a, b| a.casecmp(b) }.join
+    puts "----------------------------------------------------------------------------------------------------------"
 
     @anagram_compare = AnagramCompare.new(anagram_compare_params)
 
