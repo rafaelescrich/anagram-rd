@@ -2,7 +2,7 @@
 
 [![GitHub version](https://badge.fury.io/gh/rafaelescrich%2Fanagram-rd.svg)](http://badge.fury.io/gh/rafaelescrich%2Fanagram-rd)
 
-![](https://dl.dropboxusercontent.com/u/3150365/anagram-rd.png)
+![](https://https://dl.dropboxusercontent.com/u/3150365/anagram-rd.jpg)
 
 [Teste online the App](http://anagram-rd.herokuapp.com/)
 
