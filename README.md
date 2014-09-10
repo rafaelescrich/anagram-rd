@@ -6,7 +6,7 @@
 
 [Teste online the App](http://anagram-rd.herokuapp.com/)
 
-# Requirements
+# Installation Git
 
 First install [rbenv](https://github.com/sstephenson/rbenv)
 
@@ -29,11 +29,11 @@ Now you have to clone this repo to your machine
 git clone git@github.com:rafaelescrich/anagram-rd.git
 cd anagram-rd
 ```
-After the installation finishes with run bundle without the prodctuons gems
+After the installation finishes with run bundle without the productions gems
 ```
 bundle install --without production
 ```
-At last but not least we run the server locally to see our APP.
+At last but not at least we run the server locally to see our APP.
 ```
 rails s
 ```
@@ -41,15 +41,11 @@ rails s
 This gem works with Ubuntu 14.04 with Ruby 1.9.3-p547.
 
 
-# Installation
+# Installation GEM
 
 To install the anagram-rd gem use 'gem install' (you might have use 'sudo gem install')
 
 ```
 gem install anagram-rd
 ```
-
-# Usage
-
-
-# Common Problems
+Any doubts or bugs, please report at rafaelescrich at gmail.com
