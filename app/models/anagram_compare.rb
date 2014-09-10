@@ -7,6 +7,7 @@ class AnagramCompare < ActiveRecord::Base
 	end
 
 	def status_true
-	  self.status = self.clean(original) == self.clean(wannabe) ? true : false
-    end  
+	  	self.status = self.clean(original) == self.clean(wannabe) ? true : false
+    end
+	 
 end
