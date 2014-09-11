@@ -27,4 +27,15 @@ RSpec.describe AnagramCompare, :type => :model do
       expect(anagram.status).to be_falsey
     end
   end
+
+  describe "#clean" do
+    it "should return the string without blank spaces, in downcase and in alphabetical order" do
+      string = AnagramCompare.new.clean("I'm almost done with the test part!!!")
+      expect(string == "!!!'aadeeehhiilmmnooprssttttttw").to be_truthy
+    end
+    it "should return the string without blank spaces, in downcase and in alphabetical order" do
+      string = AnagramCompare.new.clean("bbc")
+      expect(string == "cbb").to be_falsey
+    end
+  end
 end
