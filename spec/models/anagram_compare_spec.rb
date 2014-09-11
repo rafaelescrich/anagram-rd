@@ -1,12 +1,18 @@
-require 'spec_helper'
 require 'rails_helper'
 
-describe AnagramCompare do
+RSpec.describe AnagramCompare, :type => :model do
 
-	anagram = AnagramCompare(original: "teste",wannabe: "etset")
-  	expect(anagram.status).to be_truthy
-  
-  	anagram = AnagramCompare(original: "teste",wannabe: "xxx")
-  	expect(anagram.status).to be_falsey
+  describe "#status" do
+    it "should return true when anagram" do
+      anagram = AnagramCompare.new(original: "teste",wannabe: "etset")
+      anagram.status_true
+      expect(anagram.status).to be_truthy
+    end
 
+    it "should return false when not anagram" do
+      anagram = AnagramCompare.new(original: "teste", wannabe: "xxx")
+      anagram.status_true
+      expect(anagram.status).to be_falsey
+    end
+  end
 end

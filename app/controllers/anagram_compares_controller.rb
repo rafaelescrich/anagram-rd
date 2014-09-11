@@ -1,5 +1,5 @@
 class AnagramComparesController < ApplicationController
-  before_action :set_anagram_compare, only: [:show, :edit, :update, :destroy]
+  before_action :set_anagram_compare, only: [:show, :update, :destroy]
 
   # GET /anagram_compares
   # GET /anagram_compares.json
@@ -17,8 +17,10 @@ class AnagramComparesController < ApplicationController
     @anagram_compare = AnagramCompare.new
   end
 
+  # Redirect to index to block users from editing
   # GET /anagram_compares/1/edit
   def edit
+    redirect_to action: 'index', status: 303
   end
 
   # POST /anagram_compares
