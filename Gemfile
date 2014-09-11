@@ -18,6 +18,7 @@ group :production do
 end
 # Using rspec to create unit tests
 gem 'rspec'
+gem 'rspec-rails'
 # Using Simple_form with bootstrap
 gem 'simple_form'
 # Use SCSS for stylesheets
