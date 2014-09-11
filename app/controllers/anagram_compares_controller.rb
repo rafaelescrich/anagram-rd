@@ -1,5 +1,5 @@
 class AnagramComparesController < ApplicationController
-  before_action :set_anagram_compare, only: [:show, :update, :destroy]
+  before_action :set_anagram_compare, only: [:show, :edit, :update, :destroy]
 
   # GET /anagram_compares
   # GET /anagram_compares.json

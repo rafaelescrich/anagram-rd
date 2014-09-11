@@ -1,6 +1,6 @@
 class AnagramCompare < ActiveRecord::Base
 
-	before_create :is_anagram
+	before_save :is_anagram
 
 	def is_anagram
   		self.status = self.clean(original) == self.clean(wannabe)
