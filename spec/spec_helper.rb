@@ -14,12 +14,6 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-
-ENV["RAILS_ENV"] ||= 'test'
-require File.expand_path("../../config/environment", __FILE__)
-require 'rspec/rails'
-require 'rspec/autorun'
-
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
@@ -44,17 +38,12 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
+  config.default_formatter = 'doc'
 
-  config.fixture_path = "#{::Rails.root}/spec/fixtures"
-
-  config.use_transactional_fixtures = true
+  config.profile_examples = 10
 
   config.order = :random
 
-  config.expect_with :rspec do |c|
-    c.syntax = [:should, :expect]
-  end
 
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
